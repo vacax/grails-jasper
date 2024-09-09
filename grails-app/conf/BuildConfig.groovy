@@ -11,9 +11,28 @@ grails.project.dependency.resolution = {
     log 'warn'
 
     repositories {
-        grailsCentral()
-        mavenLocal()
-        mavenCentral()
+        //grailsCentral()
+        //mavenLocal()
+        //mavenCentral()
+
+        mavenRepo 'https://repo1.maven.org/maven2/'
+        mavenRepo 'https://repo.maven.apache.org/maven2/'
+        mavenRepo 'https://repo.spring.io/milestone'
+        mavenRepo "https://repo.grails.org/grails/core"
+        mavenRepo "https://repo.grails.org/grails/plugins"
+
+        mavenRepo "https://repository.mulesoft.org/nexus/content/repositories/public/"
+        mavenRepo "https://repository.mulesoft.org/snapshots/"
+        mavenRepo "http://download.java.net/maven/2/"
+
+        mavenRepo "https://repository.jboss.org/maven2/"
+
+        mavenRepo "http://oss.sonatype.org/content/repositories/vaadin-snapshots/"
+        mavenRepo "http://maven.vaadin.com/vaadin-addons/"
+
+        mavenRepo "https://repo.spring.io/release/"
+        //https://community.jaspersoft.com/questions/1184741/3rd-party-repo-down web page de la solucion del problema de abajo
+        mavenRepo "https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/"
     }
 
     dependencies {
